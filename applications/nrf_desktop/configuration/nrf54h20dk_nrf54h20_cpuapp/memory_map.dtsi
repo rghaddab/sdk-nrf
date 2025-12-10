@@ -18,18 +18,18 @@
 		 */
 
 		cpuapp_boot_partition: partition@30000 {
-			reg = <0x30000 DT_SIZE_K(24)>;
+			reg = <0x30000 DT_SIZE_K(32)>;
 		};
 
 		/* When using merged slots, the definition of MCUboot slots is common for all
 		 * images and points to the "merged" partition.
 		 */
 		slot0_partition: partition@36000 {
-			reg = <0x36000 DT_SIZE_K(808)>;
+			reg = <0x38000 DT_SIZE_K(808)>;
 		};
 
 		cpuapp_slot0_partition: partition@36800 {
-			reg = <0x36800 DT_SIZE_K(330)>;
+			reg = <0x38800 DT_SIZE_K(330)>;
 		};
 
 		cpurad_slot0_partition: partition@89000 {
